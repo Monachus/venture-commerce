@@ -41,7 +41,7 @@ export default async function ProductPage(props:Props) {
             <p>{product.color}</p>
           </div>
         </div>
-        <Button className="w-full">Add to Cart</Button>
+        <Button className="w-full" disabled>Coming Soon</Button>
       </div>
     </div>
   )
