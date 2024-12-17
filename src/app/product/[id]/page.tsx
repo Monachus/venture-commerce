@@ -2,8 +2,13 @@ import { products } from '@/lib/products'
 import { notFound } from 'next/navigation'
 import { Button } from "@/components/ui/button"
 
-export default function ProductPage({ params }: { params: { id: string } }) {
-  const product = products.find(p => p.id === params.id)
+type Props = {
+  params: Promise<{ id: string }>
+}
+
+export default async function ProductPage(props:Props) {
+  const resolvedParams= await props.params;
+  const product = products.find(p => p.id === resolvedParams.id)
 
   if (!product) {
     notFound()
