@@ -11,6 +11,7 @@ export interface Product {
 }
 
 export const products: Product[] = [
+  /*
   {
     id: "1",
     name: "Compostable filament",
@@ -22,6 +23,7 @@ export const products: Product[] = [
     weight: "1kg",
     color: "Silk White"
   },
+  */
   /*
   {
     id: "2",
