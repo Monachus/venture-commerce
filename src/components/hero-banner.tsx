@@ -21,7 +21,7 @@ export function HeroBanner() {
             <div className="space-y-4">
               <div className="aspect-w-3 aspect-h-2">
                 <Image
-                  src="https://b4plastics.com/wp-content/uploads/2020/12/b4plastics-compost3d-compost-black.jpg"
+                  src="/plastic-filament.jpg"
                   alt="3D printed object"
                   width={600}
                   height={400}
